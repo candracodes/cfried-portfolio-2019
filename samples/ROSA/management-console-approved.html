@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RoSA | Management Console</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="node_modules/tether/dist/css/tether.min.css" />
+    <link rel="stylesheet" href="node_modules/amcharts3/amcharts/plugins/export/export.css" type="text/css" media="all" />    
+    <link rel="stylesheet" href="style/rosa-style.css" />
+    
+  </head>
+  <body class="newbodybackground">
+
+      <div id="wrapper">
+
+          <!-- **************** ================================ **************** -->
+          <!-- **************** THIS IS THE SIDEBAR MENU         **************** -->
+          <!-- **************** ================================ **************** -->
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand logo">
+                </li>
+                <li class="sidebar-selected">
+                    <a href="#" style="width:100%;"><i class="fa fa-home pr-2 icon-color"></i>MANAGEMENT CONSOLE</a>
+                </li>
+                <li>
+                    <a href="dashboard.html" style="width:100%;"><i class="fa fa-plus-circle pr-2 icon-color"></i>M-609 FORMS - <strong>NEW</strong></a>
+                </li>
+                <li>
+                    <a href="609forms.html" style="width:100%;"><i class="fa fa-file-text pr-2 icon-color"></i>M-609 FORMS - SEARCH</a>
+                </li>
+                <li>
+                    <a href="#" style="width:100%;"><i class="fa fa-map-o pr-2 icon-color"></i>SEARCH BY MAPS</a>
+                </li>
+                <!-- START COLLAPSE ADMIN ACTION -->
+                <li class="plus-minus" style="text-indent:7px;">
+                    <i class="fa fa-cog pr-2 icon-color"></i>ADMIN TOOLS
+                    <a data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    
+                    </a>
+                </li>
+                
+                <div class="collapse" id="collapseExample2">
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-user-circle-o pr-2 icon-color pl-3"></i>ADD/EDIT APPLICATORS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-flask pr-2 icon-color pl-3"></i>ADD/EDIT CHEMICALS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-briefcase pr-2 icon-color pl-3"></i>ADD/EDIT CONTRACTORS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-files-o pr-2 icon-color pl-3"></i>ADD/EDIT CONTRACTS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-money pr-2 icon-color pl-3"></i>ADD/EDIT COST</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-wrench pr-2 icon-color pl-3"></i>ADD/EDIT INSPECTION</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="users.html" style="width:100%;"><i class="fa fa-users pr-2 icon-color pl-3"></i>ADD/EDIT USERS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-bug pr-2 icon-color pl-3"></i>SUBMIT BUG/UPGRADE</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-cogs pr-2 icon-color pl-3"></i>BUG/UPGRADE ADMIN</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-comments pr-2 icon-color pl-3"></i>VIEW/EDIT COMMENTS</a>
+                    </li>
+                </div>
+                <!-- END COLLAPSE -->
+
+                <!-- START COLLAPSE REPORT ACTION -->
+                <li class="plus-minus-2" style="text-indent:7px;">
+                    <i class="fa fa-list-alt pr-2 icon-color"></i>REPORTS
+                    <a data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                    
+                    </a>
+                </li>
+                
+                <div class="collapse" id="collapseExample3">
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-flask pr-2 icon-color pl-3"></i>CHEMICAL USAGE REPORT</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-clock-o pr-2 icon-color pl-3"></i>CONTRACT HOURS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-shower pr-2 icon-color pl-3"></i>SPRAY APPL. RECORDS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-money pr-2 icon-color pl-3"></i>COST FUNCTION REPORT</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-map-signs pr-2 icon-color pl-3"></i>SPRAY APPL. LOCATIONS</a>
+                    </li>
+                </div>
+                <!-- END COLLAPSE -->
+            </ul>
+            
+        </div><!-- END #sidebar-wrapper -->
+
+   
+
+    <!-- **************** ================================ **************** -->
+    <!-- **************** THIS IS THE MAIN CONTENT         **************** -->
+    <!-- **************** ================================ **************** -->
+    
+    <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+               
+               <!-- **************** ================================ **************** -->
+               <!-- **************** TOP NAVBAR SECTION               **************** -->
+               <!-- **************** ================================ **************** -->
+
+               <!-- START row 1 -->
+                <div class="row topnav mb-2">
+
+                    <div class="col py-1">
+                        <i class="fa fa-bars fa-2x" id="menu-toggle"></i> 
+                        <img class="rosa-logo" src="images/ROSAlogo.png" />
+                    </div> <!-- end col py-1 -->
+                    <div class="col py-1" align="right">
+                        <i class="fa fa-user"></i><span> c-JohnDoe (Statewide/Central Office)</span>
+                    </div> <!-- end col py-1-->
+                </div><!-- END row topnav mb-2 -->
+
+                <!-- **************** ================================ **************** -->
+                <!-- **************** PAGE TITLE AND CALENDAR FILTER   **************** -->
+                <!-- **************** ================================ **************** -->
+
+               <!-- START row 2 -->
+                <div class="row clearfix">
+
+                    <div class="col py-1">
+                        <h3 class="text-muted">Management Console</h3>
+                    </div> <!-- end col-md-6 -->
+                    <div class="col py-1" align="right">
+                        Current View:
+
+                                <!-- START DROPDOWN MENU -->
+                                <div class="btn-group">
+                                <a class="btn btn-secondary dropdown-toggle" href="http://example.com" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                     1/1/2017 – 12/31/2017
+                                </a>
+                                <br />
+                                <br />
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">1/1/2017 – 12/31/2017</a>
+                                    <a class="dropdown-item" href="#">07/01/2017 – 06/30/2018</a>
+                                    <a class="dropdown-item" href="#">mm/dd/yyyy – mm/dd/yyyy</a>
+                                </div><!-- END dropdown-menu -->
+                                </div><!-- END DROPDOWN MENU -->
+
+                                
+                    </div> <!-- end col py-1 -->
+                </div><!-- END row 2 -->
+
+                <!-- **************** ================================ **************** -->
+               <!-- **************** DASHBOARD PANEL BUTTONS SECTION   **************** -->
+               <!-- **************** ================================ **************** -->
+
+                <!-- START row 3 -->
+                <div class="row mb-2 mt-1 clearfix">
+
+                    <!-- START BUTTON 1 -->
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header panel-1">
+                               <div class="left-side"><i class="fa fa-clock-o fa-4x"></i></div>
+                               <div align="right" class="right-side"><h1>200</h1><p>Pending</p></div>
+                            </div>
+                            <div align="right" class="card-block sub-panel-1">
+                                <a href="609forms.html">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                            </div><!-- END card-block -->
+                        </div><!-- END card -->
+                    </div> <!-- END BUTTON 1: col -->
+                    
+                     <!-- START BUTTON 2 -->
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header panel-2">
+                               <div class="left-side"><i class="fa fa-times fa-4x"></i></div>
+                               <div align="right" class="right-side"><h1>10</h1><p>Rejected</p></div>
+                            </div>
+                            <div align="right" class="card-block sub-panel-2">
+                                <a href="609forms.html">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                            </div><!-- END card-block -->
+                        </div><!-- END card -->
+                    </div> <!-- END BUTTON 2: col -->
+
+                    <!-- START BUTTON 3 -->
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header panel-3">
+                               <div class="left-side"><i class="fa fa-check fa-4x"></i></div>
+                               <div align="right" class="right-side"><h1>100</h1><p>Approved</p></div>
+                            </div>
+                            <div align="right" class="card-block sub-panel-3">
+                                <a href="609forms.html">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                            </div><!-- END card-block -->
+                        </div><!-- END card -->
+                    </div> <!-- END BUTTON 3: col -->
+
+                    <!-- START BUTTON 4 -->
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-header panel-4">
+                               <div class="left-side"><i style="padding-top:5px;" class="fa fa-users fa-4x"></i></div>
+                               <div align="right" class="right-side"><h1>69</h1><p>Users</p></div>
+                            </div>
+                            <div align="right" class="card-block sub-panel-4">
+                                <a href="users.html">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                            </div><!-- END card-block -->
+                        </div><!-- END card -->
+                    </div> <!-- END BUTTON 4: col -->
+
+                </div><!-- END row 3 -->
+
+               <!-- **************** ================================ **************** -->
+               <!-- **************** START COLUMN 1                   **************** -->
+               <!-- **************** ================================ **************** -->
+
+                <div class="row clearfix">
+                    <div class="col pr-0">
+                        
+                        <!-- **************** ================================ **************** -->
+                        <!-- **************** COLUMN 1: BOX 1                  **************** -->
+                        <!-- **************** ================================ **************** -->
+                         <div class="row top-box h-scroll">
+                            <div class="col">
+
+                                <table style="width:100%;" align="right">
+                                    <tr>
+                                        <td style="width:60%;"><h4 class="text-muted pt-2">M-609 Forms</h4></td>
+                                        <td><span style="display: inline;" class="category-1-link"><a href="management-console.html">PENDING</a></span></td>
+                                        <td><span style="display: inline; padding-right:10px;" class="category-1-link"><a href="management-console-rejected.html">REJECTED</a></span></td>
+                                        <td><span style="display: inline;" class="link-selected"><a href="management-console-approved.html">APPROVED</a></span></td>
+                                        <td><span style="display: inline;" class="category-1-link"><a href="management-console-drafts.html">DRAFTS</a></span></td>
+                                    </tr>
+                                </table>
+                                 <!-- <hr class="horizontal-rule-style"> -->
+
+                               
+                                <!-- START table-striped -->
+                                <table class="table table-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                        <th>Date</th>
+                                        <th>County</th>
+                                        <th>Cost FN.</th>
+                                        <th>Created By</th>
+                                        <th>Type</th>
+                                        <th style="text-align:center;">View/Edit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="good-link">
+                                        <td><a href="#">02/26/2017</a></td>
+                                        <td><a href="#">BEDFORD</a></td>
+                                        <td><a href="#">7713-01</a></td>
+                                        <td><a href="#">Satya Pala</a></td>
+                                        <td><a href="#">MOWING</a></td>
+                                        <td style="text-align:center;"><a href="search-dashboard.html"><i class="fa fa-edit"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td><a href="#">02/25/2017</a></td>
+                                        <td><a href="#">BEDFORD</a></td>
+                                        <td><a href="#">7713-01</a></td>
+                                        <td><a href="#">Satya Pala</a></td>
+                                        <td><a href="#">MOWING</a></td>
+                                        <td style="text-align:center;"><a href="search-dashboard.html"><i class="fa fa-edit"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td><a href="#">02/24/2017</a></td>
+                                        <td><a href="#">BEDFORD</a></td>
+                                        <td><a href="#">7713-01</a></td>
+                                        <td><a href="#">Satya Pala</a></td>
+                                        <td><a href="#">MOWING</a></td>
+                                        <td style="text-align:center;"><a href="search-dashboard.html"><i class="fa fa-edit"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td><a href="#">02/23/2017</a></td>
+                                        <td><a href="#">BEDFORD</a></td>
+                                        <td><a href="#">7713-01</a></td>
+                                        <td><a href="#">Satya Pala</a></td>
+                                        <td><a href="#">MOWING</a></td>
+                                        <td style="text-align:center;"><a href="search-dashboard.html"><i class="fa fa-edit"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td><a href="#">02/22/2017</a></td>
+                                        <td><a href="#">BEDFORD</a></td>
+                                        <td><a href="#">7713-01</a></td>
+                                        <td><a href="#">Satya Pala</a></td>
+                                        <td><a href="#">MOWING</a></td>
+                                        <td style="text-align:center;"><a href="search-dashboard.html"><i class="fa fa-edit"></i></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table><!-- END TABLE TABLE-STRIPED -->
+                                <div align="right" class="pb-2" style="color:#597eaa;"><a href="#" style="padding-right:15px;">M-609 Mobile Web</a> | <a href="609forms.html" style="padding-left:15px">View More <i class="fa fa-arrow-circle-right"></i></a></div>
+                            </div><!-- .category-box -->
+                        </div><!-- .row -->
+
+                        
+                    </div><!-- .col-md-6 -->
+
+                    <!-- **************** ================================ **************** -->
+                    <!-- **************** START COLUMN 2                   **************** -->
+                    <!-- **************** ================================ **************** -->
+
+                    <div class="col">
+
+                        <!-- **************** ================================ **************** -->
+                        <!-- **************** COLUMN 2: BOX 1                  **************** -->
+                        <!-- **************** ================================ **************** -->
+                        
+                        <div class="row top-box">
+                            <div class="col">
+                                <h4 class="text-muted pt-2">Application Type View – Approved M-609 Forms</h4>
+                                <hr class="horizontal-rule-style">
+
+                                <!-- START PIE CHART -->
+                                <div id="applicationdiv"></div>
+                                <!-- END PIE CHART -->
+
+                            </div><!-- .col-xs-12 -->
+                        </div><!-- .category box -->
+
+                    </div><!-- .col-md-6 -->
+                </div><!-- .row -->
+
+                <!-- **************** ================================ **************** -->
+                <!-- **************** NEW ROW: ACTIVITY VIEW         **************** -->
+                <!-- **************** ================================ **************** -->
+
+                <div class="row category-box">
+                    <div class="col">
+                        <h4 class="text-muted pt-2">Activity View</h4>
+                        <hr class="horizontal-rule-style">
+
+                        <!-- START PIE CHART -->
+                        <div id="contractordiv"></div>
+                        <!-- END PIE CHART -->
+                    </div><!-- END .col -->
+                </div><!-- END row category-box -->
+                
+                <!-- FOOTER -->
+                <div class="row">
+                    <div class="col" align="center">
+                        <p style="font-weight: bold; color:#999999;">&copy; Copyright 2017 Pennsylvania Department of Transportation | <a href="#">About ROSA</a> | <a href="#">Contact ROSA</a></p>
+                    </div><!-- END col -->
+                </div><!-- END row -->
+
+
+            </div><!-- END containter-fluid -->
+        </div><!-- END page-content-wrapper -->
+    </div><!-- END wrapper -->
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/amcharts3/amcharts/amcharts.js"></script>
+    <script src="node_modules/amcharts3/amcharts/pie.js"></script>
+    <script src="node_modules/amcharts3/amcharts/serial.js"></script>
+    <script src="node_modules/amcharts3/amcharts/plugins/export/export.min.js"></script>
+    <script src="node_modules/amcharts3/amcharts/themes/light.js"></script>
+
+
+
+    <!-- RUN TOGGLE SCRIPT -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <!-- END TOGGLE SCRIPT -->
+
+    <!-- RUN APPLICATION TYPE PIE CHART SCRIPT -->
+    <script>
+    var chart = AmCharts.makeChart( "applicationdiv", {
+    "type": "pie",
+    "theme": "light",
+    "dataProvider": [ {
+        "application": "Herbicide",
+        "color": "#663366",
+        "value": 201
+    }, {
+        "application": "Mowing",
+        "color": "#996699",
+        "value": 65
+    },{
+        "application": "Other Services",
+        "color": "#cc99cc",
+        "value": 40
+    }, {
+        "application": "Tree Removal",
+        "color": "#f1dfef",
+        "value": 39
+    } ],
+    "valueField": "value",
+    /*If you want the labels to show back up then remove the line below this*/
+    "labelsEnabled": true,
+    "titleField": "application",
+    "colorField": "color",
+    "outlineAlpha": 0.4,
+    /*"depth3D": 30,*/
+    "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+    /*"angle": 50,*/
+    "export": {
+        "enabled": false
+    }
+    } );
+    </script>
+    <!-- END CHART SCRIPT -->
+
+    <!-- RUN CONTRACTOR BAR CHART SCRIPT -->
+    <script>
+    var chart = AmCharts.makeChart("contractordiv", {
+    "type": "serial",
+					"categoryField": "category",
+					"colors": [
+						"#337ab7",
+						"#dc6262",
+						"#84b761"
+					],
+					"startDuration": 1,
+					"categoryAxis": {
+						"gridPosition": "start"
+					},
+					"trendLines": [],
+					"graphs": [
+						{
+							"balloonText": "[[title]]:[[value]] forms",
+							"fillAlphas": 1,
+							"id": "AmGraph-1",
+							"title": "Pending",
+							"type": "column",
+							"valueField": "column-1"
+						},
+						{
+							"balloonText": "[[title]]:[[value]] forms",
+							"fillAlphas": 1,
+							"id": "AmGraph-2",
+							"title": "Rejected",
+							"type": "column",
+							"valueField": "column-2"
+						},
+						{
+							"balloonText": "[[title]]:[[value]] forms",
+							"fillAlphas": 1,
+							"id": "AmGraph-3",
+							"title": "Approved",
+							"type": "column",
+							"valueField": "column-3"
+						}
+					],
+					"guides": [],
+					"valueAxes": [
+						{
+							"id": "ValueAxis-1",
+							/*"stackType": "regular",*/
+							"title": " "
+						}
+					],
+					"allLabels": [],
+					"balloon": {},
+					"legend": {
+						"enabled": true,
+						"useGraphSettings": true
+					},
+					/*"titles": [
+						{
+							"id": "Title-1",
+							"size": 15,
+							"text": "Top 3 Contractors"
+						
+					],}*/
+					"dataProvider": [
+						{
+							"category": "Herbacide",
+							"column-1": 8,
+							"column-2": 5,
+                            "column-3": 3,
+                            "column-4": 2
+						},
+						{
+							"category": "Mowing",
+							"column-1": 6,
+							"column-2": 7,
+                            "column-3": 3,
+                            "column-4": 1
+						},
+						{
+							"category": "Tree",
+							"column-1": 2,
+							"column-2": 3,
+                            "column-3": 3,
+                            "column-4": 1
+						},
+                        {
+							"category": "Other",
+							"column-1": 5,
+							"column-2": 3,
+                            "column-3": 3,
+                            "column-4": 1
+						}
+					],
+                    "export": {
+        "enabled": false
+    }
+				}
+			);
+		</script>
+
+    
+
+
+  </body>
+</html>

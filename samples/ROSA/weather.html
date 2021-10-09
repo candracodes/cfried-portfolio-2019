@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RoSA | Weather</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="node_modules/tether/dist/css/tether.min.css" />
+    <link rel="stylesheet" href="node_modules/amcharts3/amcharts/plugins/export/export.css" type="text/css" media="all" />    
+    <link rel="stylesheet" href="style/rosa-style.css" />
+    
+  </head>
+  <body class="newbodybackground">
+
+      <div id="wrapper">
+
+          <!-- **************** ================================ **************** -->
+          <!-- **************** THIS IS THE SIDEBAR MENU         **************** -->
+          <!-- **************** ================================ **************** -->
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand logo">
+                </li>
+                <li>
+                    <a style="width:100%;" href="management-console.html"><i class="fa fa-home pr-2 icon-color"></i>MANAGEMENT CONSOLE</a>
+                </li>
+                <li>
+                    <a href="dashboard.html" style="width:100%;"><i class="fa fa-plus-circle pr-2 icon-color"></i>M-609 FORMS - <strong>NEW</strong></a>
+                </li>
+                <!-- START SUB CATEGORIES -->
+                <li class="sub-sidebar">
+                    <a style="width:100%;" href="dashboard.html"><i class="fa fa-dashboard pr-2 icon-color"></i>DASHBOARD</a>
+                </li>
+
+                <li class="sub-sidebar">
+                    <a style="width:100%;" href="main.html"><i class="fa fa-id-card pr-2 icon-color"></i>MAIN</a>
+                </li>
+
+                <li class="sub-sidebar-selected">
+                    <a style="width:100%;" href="weather.html"><i class="fa fa-umbrella pr-2 icon-color"></i>WEATHER</a>
+                </li>
+
+                <li class="sub-sidebar">
+                    <a style="width:100%;" href="applicator.html"><i class="fa fa-users pr-2 icon-color"></i>APPLICATOR</a>
+                </li>
+
+                <li class="sub-sidebar">
+                    <a style="width:100%;" href="rms-locations.html"><i class="fa fa-map-marker pr-2 icon-color"></i>RMS LOCATIONS</a>
+                </li>
+
+                <li class="sub-sidebar">
+                    <a style="width:100%;" href="herbicide-mix.html"><i class="fa fa-flask pr-2 icon-color"></i>HERBICIDE MIX</a>
+                </li>
+
+                <li class="sub-sidebar">
+                    <a style="width:100%;" href="herbicide-usage.html"><i class="fa fa-pagelines pr-2 icon-color"></i>HERBICIDE USAGE</a>
+                </li>
+
+                <li class="sub-sidebar">
+                    <a style="width:100%;" href="contractor-cost.html"><i class="fa fa-usd pr-2 icon-color"></i>CONTRACTOR COST</a>
+                </li>
+
+                <li class="sub-sidebar">
+                    <a style="width:100%;" href="comments.html"><i class="fa fa-comment pr-2 icon-color"></i>COMMENTS</a>
+                </li>
+
+                <li class="sub-sidebar">
+                    <a style="width:100%;" href="files.html"><i class="fa fa-files-o pr-2 icon-color"></i>FILES</a>
+                </li>
+                <li class="sub-sidebar">
+                    <a style="width:100%;" href="#"><i class="fa fa-file pr-2 icon-color"></i><em>M-609 DRAFTS</em></a>
+                </li>
+                <!-- END SUB CATEGORIES -->
+                <li>
+                    <a href="609forms.html" style="width:100%;"><i class="fa fa-file-text pr-2 icon-color"></i>M-609 FORMS - SEARCH</a>
+                </li>
+                <li>
+                    <a href="#" style="width:100%;"><i class="fa fa-map-o pr-2 icon-color"></i>SEARCH BY MAPS</a>
+                </li>
+                <!-- START COLLAPSE ACTION -->
+                <li class="plus-minus" style="text-indent:7px;">
+                    <i class="fa fa-cog pr-2 icon-color"></i>ADMIN TOOLS
+                    <a data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                    
+                    </a>
+                </li>
+                
+                <div class="collapse" id="collapseExample2">
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-user-circle-o pr-2 icon-color pl-3"></i>ADD/EDIT APPLICATORS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-flask pr-2 icon-color pl-3"></i>ADD/EDIT CHEMICALS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-briefcase pr-2 icon-color pl-3"></i>ADD/EDIT CONTRACTORS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-files-o pr-2 icon-color pl-3"></i>ADD/EDIT CONTRACTS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-money pr-2 icon-color pl-3"></i>ADD/EDIT COST</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-wrench pr-2 icon-color pl-3"></i>ADD/EDIT INSPECTION</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="users.html" style="width:100%;"><i class="fa fa-users pr-2 icon-color pl-3"></i>ADD/EDIT USERS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-bug pr-2 icon-color pl-3"></i>SUBMIT BUG/UPGRADE</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-cogs pr-2 icon-color pl-3"></i>BUG/UPGRADE ADMIN</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-comments pr-2 icon-color pl-3"></i>VIEW/EDIT COMMENTS</a>
+                    </li>
+                </div>
+                <!-- END COLLAPSE -->
+                <!-- START COLLAPSE REPORT ACTION -->
+                <li class="plus-minus-2" style="text-indent:7px;">
+                    <i class="fa fa-list-alt pr-2 icon-color"></i>REPORTS
+                    <a data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                    
+                    </a>
+                </li>
+                
+                <div class="collapse" id="collapseExample3">
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-flask pr-2 icon-color pl-3"></i>CHEMICAL USAGE REPORT</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-clock-o pr-2 icon-color pl-3"></i>CONTRACT HOURS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-shower pr-2 icon-color pl-3"></i>SPRAY APPL. RECORDS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-money pr-2 icon-color pl-3"></i>COST FUNCTION REPORT</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-map-signs pr-2 icon-color pl-3"></i>SPRAY APPL. LOCATIONS</a>
+                    </li>
+                </div>
+                <!-- END COLLAPSE -->
+            </ul>
+            
+        </div><!-- END #sidebar-wrapper -->
+
+   
+
+    <!-- **************** ================================ **************** -->
+    <!-- **************** THIS IS THE MAIN CONTENT         **************** -->
+    <!-- **************** ================================ **************** -->
+    
+    <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+               
+                <!-- **************** ================================ **************** -->
+               <!-- **************** TOP NAVBAR SECTION               **************** -->
+               <!-- **************** ================================ **************** -->
+
+               <!-- START row 1 -->
+                <div class="row topnav mb-2">
+
+                    <div class="col py-1">
+                        <i class="fa fa-bars fa-2x" id="menu-toggle"></i> 
+                        <img class="rosa-logo" src="images/ROSAlogo.png" />
+                    </div> <!-- end col py-1 -->
+                    <div class="col py-1" align="right">
+                        <i class="fa fa-user"></i><span> c-JohnDoe (Statewide/Central Office)</span>
+                    </div> <!-- end col py-1-->
+                </div><!-- END row topnav mb-2 -->
+
+                <!-- **************** ================================ **************** -->
+                <!-- **************** ROW 2: HEADER TITLE  **************** -->
+                <!-- **************** ================================ **************** -->
+
+               <!-- START row 2 -->
+                <div class="row">
+
+                    <div class="col py-1">
+                        <h3 class="text-muted">M-609 Forms | Weather</h3>
+                    </div> <!-- end col-md-12 -->
+                </div><!-- END row 2 -->
+
+                <!-- **************** ================================ **************** -->
+                <!-- **************** ROW 3: MAIN INFO                  **************** -->
+                <!-- **************** ================================ **************** -->
+
+                <div class="card">
+                    <div class="card-header search-header">
+                        <i class="fa fa-umbrella pr-1"></i> Weather
+                    </div><!-- END card-header -->
+                    <div class="card-block">
+                        <h5>TEMPERATURE RANGE</h5>
+                         
+                         <!-- START FORM -->
+                          <form>
+                            <!-- START row 1 -->
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label class="form-text" for="inlineLowInput">Low</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 form-text incomplete-form-item " id="inlineLowInput" placeholder="Form Number">
+                                </div><!-- END col -->
+                                <div class="col">
+                                    <label class="form-text" for="inlineHighInput">High</label>
+                                    <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 form-text incomplete-form-item " id="inlineHighInput" placeholder="Form Number">
+                                </div><!-- END col -->
+                            </div><!-- END row 1 -->
+
+                            <!-- START row 2 -->
+                            <div class="row mb-3">
+                                <div class="col">
+                                <h5>WEATHER CONDITIONS</h5>
+                                </div>
+                            </div>
+                            <!-- END row 2 -->
+
+                            <!-- START row 3 -->
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Sunny
+                                    </label>
+                                </div><!-- END col -->
+                                <div class="col">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Cloudy
+                                    </label>
+                                </div><!-- END col -->
+                                <div class="col">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Windy
+                                    </label>
+                                </div><!-- END col -->
+                                <div class="col">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Rainy
+                                    </label>
+                                </div><!-- END col -->
+                                <div class="col">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" value="">
+                                        Snowy
+                                    </label>
+                                </div><!-- END col -->
+                            </div><!-- END row 3 -->
+
+                            <!-- START row 4 -->
+                            <div class="row">
+                                <div align="right" class="col my-2">
+                                    <button type="button" class="btn form-text mr-2">Cancel</button>
+                                    <button type="button" class="btn btn-primary form-text"><i class="fa fa-save pr-1"></i>Save</button>
+                                </div><!-- END col -->
+                            </div><!-- END row 4 -->
+
+                        </form><!-- END form -->
+
+                         <!-- END FORM -->
+
+                    </div><!-- END card-block -->
+                </div><!-- END card -->
+
+                <!-- FOOTER -->
+                <div class="row">
+                    <div class="col" align="center">
+                        <p style="font-weight: bold; color:#999999;">&copy; Copyright 2017 Pennsylvania Department of Transportation | <a href="#">About ROSA</a> | <a href="#">Contact ROSA</a></p>
+                    </div><!-- END col -->
+                </div><!-- END row -->
+
+
+            </div><!-- END containter-fluid -->
+        </div><!-- END page-content-wrapper -->
+    </div><!-- END wrapper -->
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+    <!-- RUN TOGGLE SCRIPT -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <!-- END TOGGLE SCRIPT -->
+    
+
+
+  </body>
+</html>

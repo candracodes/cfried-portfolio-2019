@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>PennDOT | CDART</title>
+
+    <!-- Vendor Style Dependencies -->
+    <link rel="stylesheet" href="vendor/bootstrap.4.0.0-alpha.6.min.css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css"  rel="stylesheet" />
+
+    <!-- Required CDART Styles -->
+    <link href="css/style.css"  rel="stylesheet" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+      <!-- ////////////// NAVBAR \\\\\\\\\\\\\\\ -->
+
+      <nav class="main-nav navbar navbar-toggleable-md navbar-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-brand">
+            <a href="home.html"><img src="images/cdart-logo.svg" class="logo d-inline-block" /></a>
+            <span class="tagline d-inline-block">Crash Data Analysis Retrieval Tool</span>
+        </div>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbar-data-analysis-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Data Analysis
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-data-analysis-dropdown">
+                        <a class="dropdown-item" href="#">Search Crash Queries</a>
+                        <a class="dropdown-item" href="#">New Crash Query</a>
+                        <a class="dropdown-item" href="#">Data Dictionary</a>
+                        <a class="dropdown-item" href="#">Participant Workbook</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Batch Reporting</a>
+                </li>
+
+                <li class="nav-item mr-3">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#help-modal">Help</a>
+                </li>
+
+                <li class="nav-item account-menu">
+                    <a class="nav-link" href="#">
+                        <i class="fa fa-user user-icon"></i> c-matbrown
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ////////////// MAIN APP BODY \\\\\\\\\\\\\\\ -->
+
+    <div class="app-container container-fluid pt-4">
+
+        <div class="breadcrumbs mb-3">
+            <a href="#">New Query</a> &gt; <a href="#">Area of Interest</a> &gt; <b>Build Advanced Query</b>
+        </div><!-- .breadcrumbs -->
+        <div class="row">
+            <div class="col-xl-6">
+                <h2>Step 2b: Create Your Advanced Query</h2>
+            </div>
+            <div class="col-xl-6" align="right">
+                <a href="#" class="btn btn-primary" role="button">Advanced Search</a>
+            </div>
+        </div><!-- .row-->
+
+        <hr class="border-bottom mt-0"/>
+
+         <div class="row">
+                <div style="position:relative; height:350px;" class="col-lg-4 clearfix">
+                    <p style="font-size:11px;"><strong>WARNING:</strong> Only advanced users should use this query tool</p>
+                    <p style="font-weight:bold; margin-bottom:5px !important;">Primary Indicator</p>
+
+                    <div class="row">
+                        <div class="col-xl-9">
+                            <div class="form-group">
+                                <select class="form-control">
+                                    <option>Statewide</option>
+                                </select>
+                            </div>
+                        </div><!--.col-xl-10-->
+                        <div class="col-xl-3">
+                            <div class="form-group">
+                                <label class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input">
+                                <span class="custom-control-indicator"></span>
+                                <span class="custom-control-description">NOT</span>
+                                </label>
+                            </div><!-- .form-group -->
+                        </div><!-- .col-xl-2 -->
+                    
+                    </div>
+                    
+                </div><!-- END col-lg-3 mb-1 ml-0 clearfix -->
+
+                <div style="height:350px;" align="center" class="col-lg-2 clearfix step2b-column2">
+                    <a href="#" style="width:100px;" class="btn btn-secondary gray-button mt-2" role="button">Add <i class="fa fa-angle-right"></i></a><br />
+                    <a href="#" style="width:100px;" class="btn btn-secondary gray-button mb-2 mt-1" role="button"><i class="fa fa-angle-left"></i> Remove</a>
+                </div><!-- END col-lg-3 mb-1 ml-0 clearfix -->
+
+                <div class="col-lg-4 clearfix">
+                    <div class="form-group">
+                        <label for="exampleTextarea"><strong>Query Properties</strong></label>
+                        <textarea style="resize: none;" class="form-control" id="exampleTextarea" rows="7" placeholder="OVERTUNED OR"></textarea>
+                        <div align="right">
+                            <a href="#" style="width:100px;" class="btn btn-secondary gray-button mb-1 mt-1" data-toggle="modal" data-target="#reset-modal" role="button">RESET</a>
+                        </div>
+                    </div>
+                </div><!-- END col-lg-3 mb-1 ml-0 clearfix -->
+
+                <div style="height:350px;" align="center" class="col-lg-2 clearfix">
+                    <a href="#" style="width:100px;" class="btn btn-secondary gray-button mt-2 mb-1" role="button">AND</a><br />
+                    <a href="#" style="width:100px;" class="btn btn-secondary gray-button mb-1" role="button">OR</a><br />
+                    <a href="#" style="width:100px;" class="btn btn-secondary gray-button mb-1" role="button">(</a><br />
+                    <a href="#" style="width:100px;" class="btn btn-secondary gray-button mb-1" role="button">)</a>
+                </div><!-- END col-lg-3 mb-1 ml-0 clearfix -->        
+            
+            </div><!-- END row -->
+
+        <div class="row border-top-faded pt-3">
+            <div class="col-xl-12">
+                <a href="step2a.html"><button type="button" class="pull-left btn btn-default mr-3">&lt; Previous</button></a>
+                <a href="step3.html"><button type="button" class="pull-right btn btn-primary">Save &amp; Continue</button></a>
+            </div><!-- .col-xl-12 -->
+        </div><!-- .row -->
+
+     <!-- ////////////// ABOUT MODAL \\\\\\\\\\\\\\\ -->
+
+    <div class="modal modal-primary fade" id="about-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">About PennDOT CDART</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>CDART - PennDOT's Crash Data Analysis and Retrieval Tool<br/>
+                        Version 003.010.000</p>
+                        <p>
+                            PennDOT's Bureau of Planning and Research (BPR)
+                            Geographic Information Division (GID)
+                        </p>
+                        
+                        <p>
+                            This website is the product of a cooperative effort between PennDOT's Highway Safety and Traffic Operations Divisions (HSTOD) and BPR.
+                        </p>
+
+                        <p>
+                            CDART is a web-based query tool with the ability to present crash data in several formats including maps, spreadsheets, reports, and data files. The application allows the user to write queries using CRS data from 1997 - Current Year, which has been extracted and loaded into the GIS database.</p>
+                        </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div><!-- .modal-footer -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+    
+    <!-- ////////////// HELP MODAL \\\\\\\\\\\\\\\ -->    
+
+    <div class="modal modal-primary modal-overflow fade" id="help-modal">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">CDART Help</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div><!-- .modal-header -->
+
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-lg-8 push-lg-4 mb-5">
+                            Video here
+                        </div><!-- .col-lg-8 -->
+
+                        <div class="col-lg-4 sidebar pull-lg-8">
+                            <div class="card">
+                                <h4 class="card-header bg-dark color-white">Help Videos</h4>
+                                    <ul class="list-group no-radius">
+                                        <li class="list-group-item active">Video 1</li>
+                                        <li class="list-group-item"><a href="#">Video 2</a></li>
+                                        <li class="list-group-item"><a href="#">Video 3</a></li>
+                                        <li class="list-group-item"><a href="#">Video 4</a></li>
+                                        <li class="list-group-item"><a href="#">Video 5</a></li>
+                                    </ul>
+                            </div><!-- .card -->
+                        </div><!-- .col-lg-4 -->
+                    </div><!-- .row -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ////////////// RESET MODAL \\\\\\\\\\\\\\\ -->
+
+    <div class="modal modal-primary fade" id="reset-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Reset Query?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div><!-- .modal-header -->
+                <div class="modal-body">
+                    <p>Are you sure you want to reset this query? All data input up to this point will be lost and you will be returned to the query search.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, Reset</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                </div><!-- .modal-footer -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+
+    <!-- ////////////// FOOTER \\\\\\\\\\\\\\\ -->
+
+    <footer class="footer fixed-bottom">
+        <small class="pull-left">&copy; Copyright 2017 PennDOT. All rights reserved.</small>
+        <span class="pull-right">
+            <a href="#" data-toggle="modal" data-target="#about-modal"><i class="fa fa-question-circle"></i> About CDART</a>
+        </span>
+    </footer>
+
+    <!-- Vendor JS Dependencies -->
+    <script src="vendor/jquery.1.12.4.min.js"></script>
+    <script src="vendor/tether.1.4.0.min.js"></script>
+    <script src="vendor/bootstrap.4.0.0-alpha.6.min.js"></script>
+
+    <!-- Required CDART JavaScript -->
+    <script src="javascript/script.js" type="text/javascript"></script>
+  </body>
+</html>

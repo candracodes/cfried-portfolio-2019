@@ -1,0 +1,277 @@
+::-moz-selection {
+  background: #09828c;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #09828c;
+  color: #fff;
+  text-shadow: none;
+}
+
+
+a {
+	color: #09828c;
+}
+
+a:hover {
+	color:#398b5b;
+}
+
+footer .nav-list li a:hover,footer ul.regular li a:hover  {
+	color:#398b5b;
+}
+
+.btn-link:hover {
+  color: #398b5b;
+}
+
+.btn-color {
+  background: #09828c;
+  *background: #09828c;
+}
+.btn-color:hover,
+.btn-color.active,
+.btn-color.disabled,
+.btn-color[disabled] {
+  background: #398b5b;
+  *background: #398b5b;
+}
+
+/* portfolio */
+ul.filter li.active a{
+    background: #09828c;	
+}
+
+ul.filter li a:hover {
+    color: #09828c;
+}
+
+.portfolio-area li:hover .desc {
+    background: #09828c;	
+}
+
+
+
+/* fontawesome icons */
+.icon-square:hover,
+.icon-rounded:hover,
+.icon-circled:hover {
+    background-color: #09828c;
+}
+[class^="icon-"].active,
+[class*=" icon-"].active {
+    background-color: #09828c;
+}
+
+/* header */
+
+.navbar .nav li.active a {
+	color:#09828c;	
+}
+
+.navbar .nav li ul.dropdown-menu li a:hover, .navbar .nav li.active ul.dropdown-menu li a:hover  {
+	background:#09828c;
+	
+}
+.color {
+	background: #09828c;
+	color:#fff;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: #09828c;
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+
+}
+
+/* sequence slider */
+.sequence-nav .next:hover,.sequence-nav .prev:hover {
+	background: #09828c;
+}
+
+/* breadcrumb */
+.breadcrumb {
+
+}
+
+
+/* accordion */
+.accordion-heading a:hover {
+	color: #09828c;
+}
+.accordion-heading .active{
+	color: #09828c;
+}
+
+/* pricing box */
+.priceBox.special .emphasis {
+  background: #09828c;
+}
+
+/* tagline */
+.tagline {
+	border-bottom:5px solid #09828c;
+}
+
+
+/* styled list */
+ul.list.colored li:before {
+	color: #09828c;
+}
+
+
+/* button */
+.btn-link {
+	color: #09828c;
+}
+
+.nav .dropdown-toggle .caret {
+  margin-top: 6px;
+  border-top-color: #09828c;
+  border-bottom-color: #09828c;
+}
+
+
+
+/* tabs */
+.tabbable .nav > li > a:hover,
+.tabbable .nav > li > a:focus {
+  	background-color: #09828c;
+}
+.tabbable .nav-tabs > .active > a,
+.tabbable .nav-tabs > .active > a:hover,
+.tabbable .nav-tabs > .active > a:focus {
+  	background-color: #09828c;
+}
+
+/* accordion */
+.accordion-heading:hover .accordion-toggle,
+.accordion-heading:hover .accordion-toggle.inactive {
+	background:#09828c;
+}
+.accordion-heading .accordion-toggle.active {
+	background:#09828c;
+}
+
+
+
+/* label */
+.label-orange,
+.badge-orange {
+  background-color: #09828c;
+}
+
+
+/* nav */
+.nav-list > .active > a,
+.nav-list > .active > a:hover {
+  background: #09828c;
+}
+
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover {
+  background: #09828c;
+}
+
+.nav .dropdown-toggle .caret {
+  border-top-color: #09828c;
+  border-bottom-color: #09828c;
+}
+
+/* custom progress bar according template skin */
+.progress-orange .bar,
+.progress .bar-orange {
+  background: #09828c;
+}
+
+.progress-orange.progress-striped .bar,
+.progress-striped .bar-orange {
+  background: #09828c;
+}
+
+/* pagination */
+
+.pagination ul li a:hover {
+  background: #09828c;
+  border-color:#09828c;
+}
+
+
+/* widget */
+aside .widget ul.cat li a:hover {
+	color: #09828c;
+}
+
+aside .widget ul.recent-posts li a:hover {
+	color: #09828c;
+}
+
+aside .widget ul.tags li a {
+  background: #09828c;
+}
+
+
+/* article */
+
+.entry-body a h5.title:hover {
+	color: #09828c;
+}
+
+article.blog-post .post-heading h3 a:hover {
+	color:#09828c;
+}
+
+article.last-post {
+	background: #09828c;
+}
+
+ul.time-post li.year{
+	border-bottom:1px solid #09828c;
+}
+
+ /* 404 */
+ 
+
+.error-body{
+	background:#09828c;
+	padding:20px;
+	text-align:center;
+}
+
+/* footer */
+footer .subfooter {
+	border-top:5px solid #09828c;
+}
+
+/* misc */
+a.thumbnail:hover {
+  border-color: #09828c;
+}
+
+ul.filter li.active a:hover,.flex-control-nav li a:hover, .flex-control-nav li a.active{
+	background: #09828c;
+}
+
+.thumbnail h4 a:hover, .thumbnail .meta  span a:hover, ul.recent li h6 a:hover, ul.post-meta li a:hover, .media-body span, .media-body .media-heading a:hover, form label span, article.last-post h5 a:hover{
+	color: #09828c;
+	text-decoration:none;
+}

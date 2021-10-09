@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrapperCom {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 auto;
+	width: 960px;
+}	
+
+#wrapperCom a {
+	font-weight: bold;	
+	text-decoration: underline;
+	font-size: 16px; 
+	line-height: 16px;
+}
+
+/* unvisited, visited, selected link */
+#wrapperCom a:link, a:visited, a:active {
+    color: #44693d;
+}
+
+/* mouse over link */
+#wrapperCom a:hover {
+    color: #318e2b;
+}
+
+#wrapperCom .floatRight {
+	float: right;	
+}
+
+#wrapperCom .floatLeft {
+	float: left;
+}
+
+#wrapperCom .clearFloat {
+	clear: both;
+}
+
+#headerMain {
+	text-align:left;
+	font-size: 32px;
+	line-height: 40px;
+	color: #333f48;
+	margin-bottom: 20px;
+}
+
+.headerSub {
+	text-align:left;
+	font-size: 24px;
+	line-height: 34px;
+	color: #333f48;
+	border-bottom:2px solid #e6e6e6;
+	margin-bottom: 10px
+}
+
+#wrapperCom .paddingBottom {
+	padding-bottom: 0px;
+}
+
+#wrapperCom .marginBottom {
+	margin: 0 0 20px 0;
+}
+
+#wrapperCom p {
+	font-size: 16px;
+	color: #333f48;
+	line-height: 20px;
+	padding-bottom: 10px;
+}
+
+.categoryHeader {
+	font-size: 16px;
+	color: #333f48;	
+	text-align: center;
+	line-height: 22px;
+	padding: 5px 0;
+}
+
+.subHeader {
+	font-size: 14px;
+	color: #333f48;	
+	text-align: center;
+	line-height: 22px;
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+#wrapperCom .bold {
+	font-weight: bold;	
+}
+
+#wrapperCom .italics {
+	font-style:italic;	
+}
+
+#wrapperCom .term {
+	font-size: 0.7em;	
+}
+
+#wrapperCom img {
+	margin-right: 20px;
+	margin-bottom: 0px;
+}
+
+#wrapperCom .table ul{
+	padding: 0 5px;
+	color: #333f48;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+#wrapperCom .table ul li {
+	list-style-type: disc;
+	padding-bottom: 12px;
+	margin-left: 16px;
+}
+
+#wrapperCom .table ul li span { 
+	position: relative; 
+	left: -2px; 
+}
+
+#wrapperCom .table p {
+	padding: 2px 0 6px 25px;
+	line-height: 19px;
+	height: 42px;
+}
+
+#wrapperCom .table p a {
+	font-size: 16px;	
+	line-height: 24px;
+}
+
+#committeesTable ul{
+	padding: 0 5px;
+	color: #333f48;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+#committeesTable ul li {
+	list-style-type: disc;
+	padding-bottom: 12px;
+	margin-left: 16px;
+}
+
+#committeesTable ul li span { 
+	position: relative; 
+	left: -2px; 
+}
+
+/* LARGE AD PROFILES STYLING */
+
+#ADProfiles {
+	width: 930px;
+	margin:0 auto;
+}
+
+.ADBio {
+	padding-top: 24px;
+}
+
+.ADBioLeft {
+	width: 200px;
+	float: left;
+	padding-top: 10px;
+}
+
+.ADBioButton {
+	background-image:url(/cs/groups/public/documents/document/ywrf/mduw/~edisp/ad_050616.jpg);
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 32px;
+}
+
+.ADBioLeft img {
+	margin: 0 !important;
+	padding: 0 0 12px 0 !important;
+}
+
+.ADBioButton:hover {
+	background-position: 0 -47px;
+}
+
+.ADBioRight 
+{
+	width: 730px;
+	float: left;
+}
+
+.ADBioHeader {
+	text-align: left;
+	font-size: 24px;
+	line-height: 34px;
+	color: #333f48;
+	border-bottom: 2px solid #cececf;
+	margin-bottom: 6px;
+	display: table; /* allows the underline to be as long as the text */
+}
+
+.ADBioRight p {
+	font-size: 16px; 
+	color: #333f48;
+	line-height: 26px;
+}
+
+.viewMoreButton {
+	background-image:url("/cs/groups/public/documents/document/ywrf/mtk1/~edisp/ad_195804.jpg");
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 32px;
+}
+
+.viewMoreButton:hover {
+	background-position: 0 -47px;
+}
+
+.backButton {
+	background-image:url("/cs/groups/public/documents/document/ywrf/mtk1/~edisp/ad_195803.jpg");
+	background-repeat: no-repeat;
+	width: 160px;
+	height: 32px;
+}
+
+.backButton:hover {
+	background-position: 0 -47px;
+}
+
+/* AD STAFF PAGE STYLING */
+
+#adStaff img {
+	margin: 0;
+	padding: 0;
+}
+
+#adStaff #staffInfo p {
+	margin-bottom: 8px;
+}
+
+#adStaff .paddingright8 {
+	padding-right: 8px;
+}
+
+#adStaff .paddingtop8 {
+	padding-top: 8px;
+}
+
+#adStaff .paddingtop5 {
+	padding-top: 5px;
+}
+
+#adStaff #departments {
+	display: inline-block;
+	background-color: #f4f3f3;
+	font-weight: bold;
+	font-size: 16px;
+	padding: 30px 50px 15px 50px;
+}
+
+#adStaff #departments p a {
+	line-height: 40px;
+}
+
+#adStaff #departments .row1 {
+	width: 300px;	
+	float: left;
+	background-color: #f4f3f3;
+}
+
+#adStaff #departments .row2 {
+	width: 560px;
+	float: left;
+	background-color: #f4f3f3;
+}
+
+#adStaff .tableRow {
+	float: left;
+	width: 317px;	
+}
+
+#adStaff .marginRight4 {
+	margin-right: 4px;	
+}
+
+#adStaff .tableRow .departmentHeader {
+	text-align:left;
+	font-size: 18px;
+	line-height: 24px;
+	color: #333f48;
+	border-bottom:2px solid #bababa;
+	margin-bottom: 6px;
+}
+
+#adStaff .tableRow .text17 {
+	font-size: 17px;	
+}
+
+#adStaff .tableRow .departmentStaff {
+	margin-bottom: 12px;	
+}
+
+#adStaff .tableRow .departmentStaff .darkGrey {
+	width: 317px;
+	height: 126px;
+	background-color: #e9e9e9;
+}
+
+#adStaff .tableRow .departmentStaff .lightGrey {
+	width: 317px;
+	height: 110px;
+	background-color: #f4f3f3;
+}
+
+#adStaff .tableRow .departmentStaff .darkGrey6 {
+	width: 317px;
+	height: 128px;
+	background-color: #e9e9e9;
+}
+
+#adStaff .tableRow .departmentStaff .lightGrey6 {
+	width: 317px;
+	height: 128px;
+	background-color: #f4f3f3;
+}
+
+#adStaff .tableRow .departmentStaff .departmentMember {
+	margin-bottom: 2px;	
+}
+
+#adStaff .tableRow .departmentStaff .departmentMember p {
+	padding: 6px 0 6px 10px;
+	font-size: 14px;
+	line-height: 20px;
+	width: 225px;
+	float: left;
+}
+
+#adStaff .tableRow .departmentStaff .departmentMember img {
+	float: right;
+	height: 90px;
+	width: 70px;
+	margin: 10px 10px 10px 0;
+}
+
+#adStaff .tableRow .departmentMember p a {
+	font-size: 14px;	
+	line-height: 18px;
+} 
+
+#adStaff .tableRow .departmentStaff .backToTop {
+	text-align: center;
+	margin-top: 4px;	
+}

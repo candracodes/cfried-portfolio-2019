@@ -1,0 +1,417 @@
+/* SHARED STYLES */
+body {
+    overflow-x: hidden;
+ }
+
+ .newbodybackground {
+     background-color: #e9ecf3;
+ }
+ .logo{
+     width:185px;
+     height: 43px;
+     background:url(../images/PennDOTlogo.png);
+     background-repeat: no-repeat;
+ }
+ .rosa-logo{
+     vertical-align: text-bottom; 
+     padding-left:15px;
+     height: 35px;
+     width: 153px;
+ }
+.horizontal-rule-style {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.h-scroll{
+    overflow-x: auto;
+}
+
+/* ============================================================== */
+/* TOP NAV STYLES */
+.topnav{
+    background:#1c4480; 
+    color:#fff;
+}
+/* ============================================================== */
+/* DASHBORD BUTTON STYLES */
+.left-side {
+    float: left;
+    margin-right: 8px;
+}
+.right-div {
+    margin-left: 108px;
+}
+/* BUTTON 1 */
+.panel-1 {
+    background-color: #337ab7;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    height: 80px;
+    color: #ffffff;
+}
+.sub-panel-1 {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    color: #337ab7;
+}
+.sub-panel-1 a {
+    color: #337ab7;
+}
+/* BUTTON 2 */
+.panel-2 {
+    background-color: #dc6262;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    height: 80px;
+    color: #ffffff;
+}
+.sub-panel-2 {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    color: #dc6262;
+}
+.sub-panel-2 a {
+    color: #dc6262;
+}
+/* BUTTON 3 */
+.panel-3 {
+    background-color: #84b761;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    height: 80px;
+    color: #ffffff;
+}
+.sub-panel-3 {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    color: #84b761;
+}
+.sub-panel-3 a {
+    color: #84b761;
+}
+/* BUTTON 4 */
+.panel-4 {
+    background-color: #999999;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    height: 80px;
+    color: #ffffff;
+}
+.sub-panel-4 {
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+    color: #999999;
+}
+.sub-panel-4 a {
+    color: #999999;
+}
+
+
+/* ============================================================== */
+/* CATEGORY BOX AND FORM STYLES*/
+.top-box {
+    background:#fff; 
+    width:100%; 
+    border:1px solid #E6E9ED; 
+    margin-bottom:15px;
+    margin-left:0px;
+    height: 400px;
+}
+.category-box {
+    background:#fff; 
+    width:100%; 
+    border:1px solid #E6E9ED; 
+    margin-bottom:15px;
+    margin-left:0px;
+}
+.category-1-link {
+    display:inline; 
+    padding-left: 10px;
+}
+.category-1-link a {
+    color: #373a3c;
+}
+.link-selected {
+    display:inline;
+    border-bottom: solid 5px #6fa8dc; 
+    font-weight: bold;
+    padding-right: 5px;
+}
+.link-selected a {
+    color: #373a3c;
+    text-decoration: none;
+}
+.bad-link {
+    color: #cf2a27;
+}
+.bad-link a {
+    color: #cf2a27;
+}
+.good-link {
+    color: #597eaa;
+}
+.good-link a{
+    color: #597eaa;
+}
+.form-text {
+    font-size: 11px;
+    line-height: 11px;
+}
+.search-header {
+    background-color: #337ab7;
+    color: #ffffff;
+}
+.incomplete-form-item {
+    background-color: #ea9999;
+    border-color: red;
+}
+.h-scroll {
+    overflow:auto;
+}
+
+/* ============================================================== */
+/* AMCHARTS Styles */
+
+#applicationdiv {
+  width: 100%;
+  height: 400px;
+}
+
+#regionaldiv {
+	width		: 100%;
+	height		: 150px;
+	font-size	: 11px;
+}
+#contractordiv {
+	width		: 100%;
+	height		: 300px;
+	font-size	: 11px;
+    margin-bottom: 10px;
+}	
+
+/* ============================================================== */
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* ============================================================== */
+/* PLUS-MINUS (ADMIN) Styles */
+
+.plus-minus {
+    padding: 0;
+    color: #999999;
+}
+
+.plus-minus a {
+	display: block;
+	background: #ffffff;
+	color: #ffffff;
+	padding: 15px;
+	text-decoration: none;
+	position: relative;
+	padding-left: 36px;
+    margin-left: 50px;
+}
+
+.plus-minus a.collapsed {
+	color: inherit;
+}
+
+.plus-minus a:after {
+	content: '-';
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	font-size: 30px;
+    padding-left: 20px;
+}
+
+.plus-minus a.collapsed:after {
+	content: '+';
+	right: 10px;
+    padding-left: 20px;
+    color: #999999;
+}
+.panel-group .panel-collapse {
+	margin-top:	5px !important;
+}
+
+/* ============================================================== */
+/* PLUS-MINUS (REPORTS) Styles */
+
+.plus-minus-2 {
+    padding: 0;
+    color: #999999;
+}
+
+.plus-minus-2 a {
+	display: block;
+	background: #ffffff;
+	color: #ffffff;
+	padding: 15px;
+	text-decoration: none;
+	position: relative;
+	padding-left: 72px;
+    margin-left: 50px;
+}
+
+.plus-minus-2 a.collapsed {
+	color: inherit;
+}
+
+.plus-minus-2 a:after {
+	content: '-';
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	font-size: 30px;
+    padding-left: 20px;
+}
+
+.plus-minus-2 a.collapsed:after {
+	content: '+';
+	right: 10px;
+    padding-left: 20px;
+    color: #999999;
+}
+
+/* ============================================================== */
+/* Sidebar Styles */
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 5px;
+    line-height: 40px;
+    
+}
+
+.sidebar-nav li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #999999;
+    padding-right: 10px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #cccccc;    
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 60px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+.sidebar-selected {
+    background-color: #dddddd;
+}
+.sub-sidebar {
+    background-color: #f1f5f8;
+    padding-left: 20px;
+}
+.sub-sidebar-selected {
+    background-color: #dddddd;
+    padding-left: 20px;
+}
+.admin-menu {
+    background-color: #f1f5f8;
+}
+.icon-color{
+    color: #597eaa;
+}
+
+/* ============================================================== */
+/* RESPONSIVE MODIFICATIONS */
+
+@media(min-width:768px) {
+    
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 0px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}

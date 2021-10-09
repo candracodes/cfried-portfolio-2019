@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RoSA | Users</title>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="node_modules/tether/dist/css/tether.min.css" />
+    <link rel="stylesheet" href="node_modules/amcharts3/amcharts/plugins/export/export.css" type="text/css" media="all" />    
+    <link rel="stylesheet" href="style/rosa-style.css" />
+    
+  </head>
+  <body class="newbodybackground">
+
+      <div id="wrapper">
+
+          <!-- **************** ================================ **************** -->
+          <!-- **************** THIS IS THE SIDEBAR MENU         **************** -->
+          <!-- **************** ================================ **************** -->
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand logo">
+                </li>
+                <li>
+                    <a style="width:100%;" href="management-console.html"><i class="fa fa-home pr-2 icon-color"></i>MANAGEMENT CONSOLE</a>
+                </li>
+                <li>
+                    <a href="dashboard.html" style="width:100%;"><i class="fa fa-plus-circle pr-2 icon-color"></i>M-609 FORMS - <strong>NEW</strong></a>
+                </li>
+                <li>
+                    <a href="609forms.html" style="width:100%;"><i class="fa fa-file-text pr-2 icon-color"></i>M-609 FORMS - SEARCH</a>
+                </li>
+                <li>
+                    <a href="#" style="width:100%;"><i class="fa fa-map-o pr-2 icon-color"></i>SEARCH BY MAPS</a>
+                </li>
+                <li>
+                    <a href="#" style="width:100%;"><i class="fa fa-cog pr-2 icon-color"></i>ADMIN TOOLS</a>
+                </li>
+
+                    <!-- START ADMIN SUB-CATEGORIES -->                
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-user-circle-o pr-2 icon-color pl-3"></i>ADD/EDIT APPLICATORS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-flask pr-2 icon-color pl-3"></i>ADD/EDIT CHEMICALS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-briefcase pr-2 icon-color pl-3"></i>ADD/EDIT CONTRACTORS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-files-o pr-2 icon-color pl-3"></i>ADD/EDIT CONTRACTS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-money pr-2 icon-color pl-3"></i>ADD/EDIT COST</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-wrench pr-2 icon-color pl-3"></i>ADD/EDIT INSPECTION</a>
+                    </li>
+                    <li class="admin-menu" style="background-color:#dddddd;">
+                        <a href="#" style="width:100%;"><i class="fa fa-users pr-2 icon-color pl-3"></i>ADD/EDIT USERS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-bug pr-2 icon-color pl-3"></i>SUBMIT BUG/UPGRADE</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-cogs pr-2 icon-color pl-3"></i>BUG/UPGRADE ADMIN</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-comments pr-2 icon-color pl-3"></i>VIEW/EDIT COMMENTS</a>
+                    </li>
+                <!-- END SUBCATEGORIES -->
+
+                <!-- START COLLAPSE REPORT ACTION -->
+                <li class="plus-minus-2" style="text-indent:7px;">
+                    <i class="fa fa-list-alt pr-2 icon-color"></i>REPORTS
+                    <a data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                    
+                    </a>
+                </li>
+                
+                <div class="collapse" id="collapseExample3">
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-flask pr-2 icon-color pl-3"></i>CHEMICAL USAGE REPORT</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-clock-o pr-2 icon-color pl-3"></i>CONTRACT HOURS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-shower pr-2 icon-color pl-3"></i>SPRAY APPL. RECORDS</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-money pr-2 icon-color pl-3"></i>COST FUNCTION REPORT</a>
+                    </li>
+                    <li class="admin-menu">
+                        <a href="#" style="width:100%;"><i class="fa fa-map-signs pr-2 icon-color pl-3"></i>SPRAY APPL. LOCATIONS</a>
+                    </li>
+                </div>
+                <!-- END COLLAPSE -->
+            </ul>
+            
+        </div><!-- END #sidebar-wrapper -->
+
+   
+
+    <!-- **************** ================================ **************** -->
+    <!-- **************** THIS IS THE MAIN CONTENT         **************** -->
+    <!-- **************** ================================ **************** -->
+    
+    <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+               
+                <!-- **************** ================================ **************** -->
+               <!-- **************** TOP NAVBAR SECTION               **************** -->
+               <!-- **************** ================================ **************** -->
+
+               <!-- START row 1 -->
+                <div class="row topnav mb-2">
+
+                    <div class="col py-1">
+                        <i class="fa fa-bars fa-2x" id="menu-toggle"></i> 
+                        <img class="rosa-logo" src="images/ROSAlogo.png" />
+                    </div> <!-- end col py-1 -->
+                    <div class="col py-1" align="right">
+                        <i class="fa fa-user"></i><span> c-JohnDoe (Statewide/Central Office)</span>
+                    </div> <!-- end col py-1-->
+                </div><!-- END row topnav mb-2 -->
+
+                <!-- **************** ================================ **************** -->
+                <!-- **************** ROW 2: HEADER TITLE  **************** -->
+                <!-- **************** ================================ **************** -->
+
+               <!-- START row 2 -->
+                <div class="row">
+
+                    <div class="col py-1">
+                        <h3 class="text-muted">M-609 Forms | Users</h3>
+                    </div> <!-- end col-md-12 -->
+                </div><!-- END row 2 -->
+                
+                <!-- **************** ================================ **************** -->
+                <!-- **************** ROW 3: SEARCH CRITERIA       **************** -->
+                <!-- **************** ================================ **************** -->
+
+                <div class="row category-box"><!-- START parent row -->
+                    <div class="col"><!-- START parent col -->
+
+                        <div class="row"><!-- START child row -->
+                            <div class="col"><!-- START child col -->
+                                <h4 class="text-muted py-1">Search Criteria</h4>
+                            </div><!-- END child col -->
+
+                            <div align="right" class="col"><!-- START child col -->
+                                <!-- COLLAPSE BUTTON -->
+                                <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                <i style="color: #636c72;" class="fa fa-caret-down fa-2x pr-2"></i>
+                                </a>
+                            </div><!-- END child col -->
+                        </div><!-- END child row -->
+
+                        <hr class="horizontal-rule-style">
+
+                        <!-- START FORM -->
+                        <div class="collapse" id="collapseExample">
+                            <form>
+                                <!-- START row 1 -->
+                                <div class="row">
+                                    <div class="col">
+                                        <label class="form-text" for="inlineFormInput">CWOPA ID </label>
+                                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 form-text" id="inlineStartInput" placeholder="CWOPA ID">
+                                    </div><!-- END col -->
+                                    <div class="col">
+                                        <label class="form-text" for="inlineLastNameInput">Last Name </label>
+                                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 form-text" id="inlineLastNametInput" placeholder="Last Name">
+                                    </div><!-- END col -->
+                                    <div class="col">
+                                        <label class="form-text" for="inlineFirstNameInput">First Name </label>
+                                        <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0 form-text" id="inlineFirstNameInput" placeholder="First Name">
+                                    </div><!-- END col -->
+                                    <div class="col">
+                                        <label class="form-text" for="inlineStatusInput">Organization</label>
+                                        <select class="form-control form-text" id="exampleSelectStatus">
+                                            <option>Select...</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div><!-- END col -->
+                                    <div class="col">
+                                        <label class="form-text" for="inlineApplicationInput">PennDOT Office Id / Contractor</label>
+                                        <select class="form-control form-text" id="exampleSelectApplication">
+                                            <option>Select...</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div><!-- END col -->
+                                </div><!-- END row 1 -->
+
+                                <div class="row">
+                                    <div align="right" class="col my-2">
+                                        <button type="button" class="btn form-text">Cancel/Clear Results</button>
+                                        <button type="button" class="btn btn-primary form-text"><i class="fa fa-search pr-1"></i>Search</button>
+                                    </div><!-- END col -->
+                                </div><!-- END row -->
+                            </form><!-- END form -->
+                        </div><!-- END collapse collapseExample -->
+                    </div><!-- END PARENT col -->
+                </div><!-- END PARENT row category-box -->
+
+                <!-- **************** ================================ **************** -->
+                <!-- **************** ROW 4: SEARCH RESULTS            **************** -->
+                <!-- **************** ================================ **************** -->
+
+                <div class="card">
+                    <div class="card-header search-header">
+                        <div class="row">
+                            <div class="col">
+
+                                <table style="width:100%; padding:0px;" align="right">
+                                    <tr>
+                                        <td style="width:70%;"><i class="fa fa-search pr-1"></i> Search Results</td>
+                                        <td style="width:15%; text-align:right;">
+                                            <form class="form-inline">
+                                                <label class="mr-sm-2" for="inlineFormCustomSelect">Show</label>
+                                                <select style="font-size:11px; height:30px;" class="mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+                                                    <option selected>10</option>
+                                                    <option value="1">20</option>
+                                                    <option value="2">30</option>
+                                                    <option value="3">40</option>
+                                                </select>
+                                                Entries
+                                            </form>
+                                        </td>
+                                        <td style="width:15%;">
+                                            <span style="display: inline; margin-right:0px; padding-right:0px;"><a href="dashboard.html"><button type="button" class="btn btn-secondary form-text">Add New M-609 Form</button></a></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div><!-- END col -->
+                        </div><!-- END row -->
+
+                    </div><!-- END card-header -->
+                    <div class="card-block">
+                         <!-- START table-striped -->
+                                <table class="table table-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                        <th><a href="#">Last Name<i class="fa fa-caret-up" style="padding-left:10px;"></i></a></th>
+                                        <th><a href="#">First Name<i class="fa fa-caret-down" style="padding-left:10px;"></i></a></th>
+                                        <th><a href="#">CWOPA ID<i class="fa fa-caret-down" style="padding-left:10px;"></i></a></th>
+                                        <th><a href="#">Organization<i class="fa fa-caret-down" style="padding-left:10px;"></i></a></th>
+                                        <th><a href="#">Office<i class="fa fa-caret-down" style="padding-left:10px;"></i></a></th>
+                                        <th><a href="#">Manage Record<i class="fa fa-caret-down" style="padding-left:10px;"></i></a></th>
+                                        <th><a href="#">Delete Record<i class="fa fa-caret-down" style="padding-left:10px;"></i></a></th>
+                                        <th><a href="#">Approve Record<i class="fa fa-caret-down" style="padding-left:10px;"></i></a></th>
+                                        <th><a href="#">Manage Users<i class="fa fa-caret-down" style="padding-left:10px;"></i></a></th>
+                                        <th><a href="#">Active<i class="fa fa-caret-down" style="padding-left:10px;"></i></a></th>                                        
+                                        <th><a href="#">View/Edit<i class="fa fa-caret-down" style="padding-left:10px;"></i></a></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="good-link">
+                                        <td>Doe</td>
+                                        <td>Jonn</td>
+                                        <td>c-jodoe</td>
+                                        <td>PENNDOT</td>
+                                        <td>STATEWIDE/CENTRAL OFFICE</td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td><a href="dashboard.html"><i class="fa fa-pencil-square-o"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td>Doe</td>
+                                        <td>Jonn</td>
+                                        <td>c-jodoe</td>
+                                        <td>PENNDOT</td>
+                                        <td>STATEWIDE/CENTRAL OFFICE</td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td><a href="dashboard.html"><i class="fa fa-pencil-square-o"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td>Doe</td>
+                                        <td>Jonn</td>
+                                        <td>c-jodoe</td>
+                                        <td>PENNDOT</td>
+                                        <td>STATEWIDE/CENTRAL OFFICE</td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td><a href="dashboard.html"><i class="fa fa-pencil-square-o"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td>Doe</td>
+                                        <td>Jonn</td>
+                                        <td>c-jodoe</td>
+                                        <td>PENNDOT</td>
+                                        <td>STATEWIDE/CENTRAL OFFICE</td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td><a href="dashboard.html"><i class="fa fa-pencil-square-o"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td>Doe</td>
+                                        <td>Jonn</td>
+                                        <td>c-jodoe</td>
+                                        <td>PENNDOT</td>
+                                        <td>STATEWIDE/CENTRAL OFFICE</td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td><a href="dashboard.html"><i class="fa fa-pencil-square-o"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td>Doe</td>
+                                        <td>Jonn</td>
+                                        <td>c-jodoe</td>
+                                        <td>PENNDOT</td>
+                                        <td>STATEWIDE/CENTRAL OFFICE</td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td><a href="dashboard.html"><i class="fa fa-pencil-square-o"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td>Doe</td>
+                                        <td>Jonn</td>
+                                        <td>c-jodoe</td>
+                                        <td>PENNDOT</td>
+                                        <td>STATEWIDE/CENTRAL OFFICE</td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td><a href="dashboard.html"><i class="fa fa-pencil-square-o"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td>Doe</td>
+                                        <td>Jonn</td>
+                                        <td>c-jodoe</td>
+                                        <td>PENNDOT</td>
+                                        <td>STATEWIDE/CENTRAL OFFICE</td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td><a href="dashboard.html"><i class="fa fa-pencil-square-o"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td>Doe</td>
+                                        <td>Jonn</td>
+                                        <td>c-jodoe</td>
+                                        <td>PENNDOT</td>
+                                        <td>STATEWIDE/CENTRAL OFFICE</td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td><a href="dashboard.html"><i class="fa fa-pencil-square-o"></i></a></td>
+                                        </tr>
+                                        <tr class="good-link">
+                                        <td>Doe</td>
+                                        <td>Jonn</td>
+                                        <td>c-jodoe</td>
+                                        <td>PENNDOT</td>
+                                        <td>STATEWIDE/CENTRAL OFFICE</td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-check"></i></a></td>
+                                        <td><a href="#"><i class="fa fa-times"></i></a></td>
+                                        <td><a href="dashboard.html"><i class="fa fa-pencil-square-o"></i></a></td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table><!-- END TABLE TABLE-STRIPED -->
+                                
+                                <!-- START PAGINATION BUTTONS -->
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+                                        <li style="font-size:13px; margin-top:10px; padding-right:15px;">
+                                            <a href="#"><strong>M-609 Mobile Web</strong></a>
+                                        </li>
+                                        <li style="font-size:13px; margin-top:10px; padding-right:10px;">|</li>
+                                        <li style="font-size:13px; margin-top:10px; padding-right:10px;">Showing 1 - 10 of 100</li>
+                                        <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">First</a>
+                                        </li>
+                                        <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                        </li>
+                                        <li class="page-item">
+                                        <a class="page-link" href="#">Last</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- END PAGINATION BUTTONS -->
+
+                    </div><!-- END card-block -->
+                </div><!-- END card -->
+
+                <!-- FOOTER -->
+                <div class="row">
+                    <div class="col" align="center">
+                        <p style="font-weight: bold; color:#999999;">&copy; Copyright 2017 Pennsylvania Department of Transportation | <a href="#">About ROSA</a> | <a href="#">Contact ROSA</a></p>
+                    </div><!-- END col -->
+                </div><!-- END row -->
+
+
+            </div><!-- END containter-fluid -->
+        </div>
+     <!-- END page-content-wrapper -->
+    </div><!-- END wrapper -->
+
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/tether/dist/js/tether.min.js"></script>    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+
+    <!-- RUN TOGGLE SCRIPT -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    <!-- END TOGGLE SCRIPT -->
+    
+
+
+  </body>
+</html>
