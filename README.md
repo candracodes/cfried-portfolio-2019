@@ -4,8 +4,8 @@ The is an older portfolio from 2019 showcasing some of my professional and creat
 
 ## Important & Relevent URLs
 
-- [Deployed Application URL](https://candracodes.github.io/cfried-portfolio-v1/)
-- [GitHub Repo URL](https://github.com/candracodes/cfried-portfolio-v1)
+- [Deployed Application URL](https://candracodes.github.io/cfried-portfolio-2019/)
+- [GitHub Repo URL](https://github.com/candracodes/cfried-portfolio-2019)
 - [Resume](https://drive.google.com/file/d/1DQE7p5poFXvcVrIBnuNTejJkuoTIuxOj/view?usp=sharing)
 - [LinkedIn](https://www.linkedin.com/in/candracook/ )
 
