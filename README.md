@@ -14,7 +14,7 @@ The is an older portfolio from 2019 showcasing some of my professional and creat
 
 * This portfolio resembles the following screenshot:
 
-![Screenshot](./assets/screenshots/screenshot1.png)
+![Screenshot](./assets/screenshot1.png)
 
 ## Frameworks & Libraries
 
